@@ -47,49 +47,78 @@ Professor Orientador
 
 
 
-Introdução
+# 1- Introdução
+Motoristas frequentemente enfrentam gastos inesperados devido à falta
+de monitoramento do desempenho do veículo. Nosso projeto visa
+proporcionar controle e segurança aos motoristas, prevenindo falhas
+mecânicas e otimizando o uso do veículo. Utilizando um dispositivo
+OBD2 conectado a um Raspberry Pi Zero W, os dados do veículo são
+coletados e enviados para um aplicativo via Bluetooth. Este sistema
+impactará positivamente o processo do cliente ao reduzir custos e
+aumentar a lucratividade.
 
+# 2- Objetivo
+O problema enfrentado pelos motoristas é a falta de monitoramento do
+desempenho do carro, resultando em gastos inesperados. Nosso sistema
+computadorizado resolverá isso ao fornecer alertas preventivos sobre
+falhas mecânicas e consumo excessivo, ajudando os motoristas a reduzir
+custos e aumentar o lucro.
 
+# 3- Objetivo
+Automatizar o monitoramento do desempenho do veículo para que os
+motoristas recebam alertas preventivos sobre falhas mecânicas e
+consumo excessivo, permitindo a redução de custos e aumento de lucro.
 
+# 4- Escopo
+O sistema implementará os seguintes requisitos principais:
+1. Coleta de dados do veículo via dispositivo OBD2 e Raspberry Pi Zero W.
+2. Envio dos dados para um aplicativo via Bluetooth.
+3. Perfis no aplicativo para motoristas de app e motoristas comuns,
+com funcionalidades específicas para cada perfil.
+Limitações:
+• Não será implementado suporte para outros tipos de veículos além dos
+compatíveis com OBD2.
+• Não incluirá funcionalidades de navegação ou rastreamento de localização.
 
+# 5- Backlogs do Produto
+Aqui está uma tabela de planejamento do projeto com atividades e
+datas, com periodicidade de tarefas a cada 2 semanas:
+Atividade Data de Início Data de Término
+Pesquisa e planejamento 01/04/2025 14/04/2025
+Desenvolvimento do hardware 15/04/2025 28/04/2025
+Desenvolvimento do software 29/04/2025 12/05/2025
+Testes e validação 13/05/2025 26/05/2025
+Implementação final 27/05/2025 09/06/2025
 
-Objetivo
+# 6- Materiais e Métodos
+Modelagem do sistema:
+ • Diagrama de Caso de Uso: Mostra as relações entre motoristas e
+   processos de monitoramento e alertas.
+ • Diagrama de Classes: Mostra as relações entre as classes do sistema,
+   como dados do veículo, alertas e perfis de usuário.
+ Tecnologias utilizadas:
+ • Linguagens: Python para programação do Raspberry Pi e
+   desenvolvimento do aplicativo.
+ • Frameworks: Flask para o backend do aplicativo.
+ • Bibliotecas: PyOBD para comunicação com o dispositivo OBD2.
+ • Ferramentas de modelagem: LucidChart para criação dos diagramas UML.
+ Arquitetura do sistema:
+ A arquitetura do sistema inclui o dispositivo OBD2 conectado ao
+Raspberry Pi Zero W, que coleta dados do veículo e envia via Bluetooth
+para o aplicativo. O fluxo das informações é detalhado na imagem
+abaixo:
+!Arquitetura do Sistema
 
+# 7- Resultados
+Protótipo:
+As telas do software incluem:
+  • Tela inicial: Exibe o status do veículo e alertas.
+  • Tela de perfil: Permite ao motorista acompanhar km rodados, consumo e lucro.
+  • Tela de alertas: Mostra alertas sobre consumo excessivo e falhas mecânicas.
 
-
-
-Escopo
-
-
-
-Backlogs do Produto
-
-
-
-
-Cronograma
-
-
-
-
-Materiais e Métodos
-
-
-
-Modelagem do sistema: 
-
-Tecnologias utilizadas: 
-
-Arquitetura do sistema: 
-
-
-Resultados
-
-
-Protótipo: 
-
-Códigos das principais funcionalidades: 
-
+Códigos das principais funcionalidades:
+  Código para coleta de dados do OBD2
+  Código para envio de dados via Bluetooth
 
 Conclusão
 
